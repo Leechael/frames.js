@@ -80,7 +80,7 @@ export type FrameButtonPost = {
   /** Must be post or post_redirect. Defaults to post if no value was specified.
    * If set to post, app must make the POST request and frame server must respond with a 200 OK, which may contain another frame.
    * If set to post_redirect, app must make the POST request, and the frame server must respond with a 302 OK with a location property set on the header. */
-  action: "post" | "post_redirect";
+  action?: "post" | "post_redirect";
   target?: undefined;
   /** A 256-byte string which is label of the button */
   label: string;
